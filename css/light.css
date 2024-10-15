@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+/* ALLES */
+/* CSS für "alles" */
+* {
+    color: #212529;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* CSS für <html> und <body> */
+html, body {
+    background-color: #ffffff !important;
+    height: 100%;
+	margin: 0;
+}
+
+/* CSS für List Items, verlinkungen und Knöpfe */
+li, a, button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;
+    font-size: 18px !important;
+    color: #212529;
+    text-decoration: none !important;
+}
+
+/* CSS für <span> <div> und <i> */
+span, div, i {
+    color: #212529;
+}
+
+/* CSS für <hr> (Horizontal Line) */
+hr {
+    border: 0 !important;
+    border-top: 1px solid #ffffff !important;
+    width: 90% !important;
+    margin: auto !important;
+    opacity: .25 !important;
+}
+
+
+
+/* Aufgrund von unserem Style Switch (classes welche sich je nach CSS Datei ändern) */
+/* Custom Background */
+.cbg {
+    background-color: #dee2e6 !important;
+}
+
+/* Custom Background 2 */
+.cbg2 {
+    background-color: #c1c5c8 !important;
+}
+
+/* Custom Text */
+.ctext {
+    color: #212529 !important;
+}
+
+
+
+/* Other Custom stuff */
+/* CSS für das 404 Image */
+.fof-img {
+    background-image: url("/media/404_light.gif");
+    height: 70%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* Custom Vertical line left */
+.cvr {
+    border-left: 2px solid #212529;
+    height: 100%;
+}
+
+/* Custom Vertical line right */
+.cvl {
+    border-right: 2px solid #212529;
+    height: 100%;
+}
+
+
+
+/* Custom CSS für Bootstrap Sachen */
+/* CSS für dropdown-menus (kommt an sich nur im Header vor) */
+.dropdown-menu {
+    background-color: #dee2e6 !important;
+}
+
+/* CSS fpr dropdown-items (kommt so auch nur im Header vor) */
+.dropdown-item {
+    font-size: 1.3rem;
+    color: #212529 !important;
+}
+
+/* CSS für das hovern auf dropdown-items */
+.dropdown-item:hover {
+    background-color: #b8babd !important;
+}
+
+/* Navbar Icon CSS */
+.navbar-icon {
+    height: 50px;
+    width: 50px;
+    display: block;
+}
+.navbar-icon-g {
+    fill: #000;
+}
+
+/* CSS für unsere Icons (an sich auch nur die im Header) */
+.fa-user, .fa-cart-shopping, .fa-circle-info, .fa-exclamation{
+    font-size: 1.5rem;
+    color: #212529;
+    transition: all 0.5s ease;
+}

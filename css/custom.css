@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+/* ALLES */
+/* CSS für "alles" */
+* {
+    color: #bc13fe !important;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* CSS für <html> und <body> */
+html, body {
+    background-color: #2d3238 !important;
+    height: 100%;
+	margin: 0;
+}
+
+/* CSS für List Items, Verlinkungen und Knöpfe */
+li, a, button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;
+    font-size: 18px !important;
+    color: #bc13fe !important;
+    text-decoration: none !important;
+}
+
+/* CSS für <span> <div> und <i> */
+span, div, i {
+    color: #bc13fe !important;
+}
+
+/* CSS für <hr> (Horizontal Line) */
+hr {
+    border: 0 !important;
+    border-top: 1px solid #cfff04 !important;
+    width: 90% !important;
+    margin: auto !important;
+    opacity: .25 !important;
+}
+
+
+
+/* Aufgrund von unserem Style Switch (classes welche sich je nach CSS Datei ändern) */
+/* Custom Background */
+.cbg {
+    background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);  
+    background-size: 1000% 1000% !important;
+    -webkit-animation: rainbowback 9s ease infinite !important;
+    -z-animation: rainbowback 9s ease infinite !important;
+    -o-animation: rainbowback 9s ease infinite !important;
+      animation: rainbowback 9s ease infinite !important;
+}
+
+/* Custom Background 2 */
+.cbg2 {
+    background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);  
+    background-size: 1000% 1000% !important;
+    -webkit-animation: rainbowback 9s ease infinite !important;
+    -z-animation: rainbowback 9s ease infinite !important;
+    -o-animation: rainbowback 9s ease infinite !important;
+      animation: rainbowback 9s ease infinite !important;
+}
+
+/* Custom Text */
+.ctext {
+    color: #bc13fe !important;
+}
+
+
+
+/* Other Custom stuff */
+/* CSS für das 404 Image */
+.fof-img {
+    background-image: url("/media/404_dark.gif");
+    height: 70%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* Custom Vertical line left */
+.cvr {
+    border-left: 2px solid #cfff04;
+    height: 100%;
+}
+
+/* Custom Vertical line right */
+.cvl {
+    border-right: 2px solid #cfff04;
+    height: 100%;
+}
+
+
+
+/* Custom CSS für Bootstrap Sachen */
+/* CSS für dropdown-menus (kommt an sich nur im Header vor) */
+.dropdown-menu {
+    background-color: #4efd54;
+    animation: rainbow-bg 2.5s linear  !important;
+    animation-iteration-count: infinite  !important;
+}
+
+/* CSS fpr dropdown-items (kommt so auch nur im Header vor) */
+.dropdown-item {
+    font-size: 1.3rem;
+    color: white !important;
+}
+
+/* CSS für das hovern auf dropdown-items */
+.dropdown-item:hover {
+    background-color: #2c3135 !important;
+}
+
+/* Navbar Icon CSS */
+.navbar-icon {
+    height: 50px;
+    width: 50px;
+    display: block;
+    filter: brightness(0.5) sepia(1) saturate(10000%) hue-rotate(290deg);
+}
+.navbar-icon-g {
+    fill: #bc13fe !important;
+}
+
+/* CSS für unsere Icons (an sich auch nur die im Header) */
+.fa-user, .fa-cart-shopping, .fa-circle-info, .fa-exclamation{
+    font-size: 1.5rem;
+    color: #bc13fe !important;
+    transition: all 0.5s ease;
+}
+
+/* Anpassung am Bootstrap dark background */
+.bg-dark {
+    background-color: #fe019a !important;
+}
+
+/* Anpassung am Bootstrap Primary text */
+.text-primary {
+    color: #bc13fe !important;
+}
+/* Anpassung am Bootstrap White text */
+.text-white {
+    color: #bc13fe !important;
+}
+
+/* Anpassung am Bootstrap Dark text */
+.text-dark {
+    color: #bc13fe !important;
+}
+
+/* Bootstrap Button Primary anpassung */
+.btn-primary {
+    background-color: #cfff04 !important;
+    border-color: #bce507 !important;
+}
+
+.btn-primary:hover {
+    transition: 0.2s !important;
+    animation: rainbow-bg 2.5s linear  !important;
+    animation-iteration-count: infinite  !important;
+    background-color: #bce507;
+    border-color: #9fc205 !important;
+}
+
+.btn-check:focus+.btn-primary,.btn-primary:focus {
+    box-shadow: 0 0 0 .25rem #cfff04 !important;
+}
+.btn-check:active+.btn-primary,.btn-check:checked+.btn-primary,.btn-primary.active,.btn-primary:active,.show>.btn-primary.dropdown-toggle {
+    animation: rainbow-bg 2.5s linear  !important;
+    animation-iteration-count: infinite  !important;
+    background-color: #cfff04;
+    border-color: #bce507 !important;
+}
+
+.btn-check:active+.btn-primary:focus,.btn-check:checked+.btn-primary:focus,.btn-primary.active:focus,.btn-primary:active:focus,.show>.btn-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 .25rem #cfff04 !important;
+}
+
+/* Bootstrap Button Outline Primary anpassung */
+.btn-outline-primary {
+	color:#cfff04 !important;
+	border-color:#cfff04 !important;
+}
+
+.btn-outline-primary:hover {
+	color:#bce507 !important;
+	background-color:#cfff04 !important;
+	border-color:#cfff04 !important;
+}
+	
+.btn-check:focus+.btn-outline-primary,.btn-outline-primary:focus {
+	box-shadow: 0 0 0 .25rem #cfff04 !important;
+}
+	
+.btn-check:active+.btn-outline-primary,.btn-check:checked+.btn-outline-primary,.btn-outline-primary.active,.btn-outline-primary.dropdown-toggle.show,.btn-outline-primary:active {
+	color:#bce507 !important;
+	background-color:#cfff04 !important;
+	border-color:#cfff04 !important;
+}
+
+.btn-check:active+.btn-outline-primary:focus,.btn-check:checked+.btn-outline-primary:focus,.btn-outline-primary.active:focus,.btn-outline-primary.dropdown-toggle.show:focus,.btn-outline-primary:active:focus {
+	box-shadow: 0 0 0 .25rem #cfff04 !important;
+}
+
+.btn-outline-primary.disabled,.btn-outline-primary:disabled {
+	color:#cfff04 !important;
+	background-color:transparent;
+}
+
+
+
+/* Rainbow Animationen */
+@keyframes rainbow-bg{
+    100%,0%{
+        background-color: rgb(255,0,0);
+    }
+    8%{
+        background-color: rgb(255,127,0);
+    }
+    16%{
+        background-color: rgb(255,255,0);
+    }
+    25%{
+        background-color: rgb(127,255,0);
+    }
+    33%{
+        background-color: rgb(0,255,0);
+    }
+    41%{
+        background-color: rgb(0,255,127);
+    }
+    50%{
+        background-color: rgb(0,255,255);
+    }
+    58%{
+        background-color: rgb(0,127,255);
+    }
+    66%{
+        background-color: rgb(0,0,255);
+    }
+    75%{
+        background-color: rgb(127,0,255);
+    }
+    83%{
+        background-color: rgb(255,0,255);
+    }
+    91%{
+        background-color: rgb(255,0,127);
+    }
+}
+
+@keyframes rainbow{
+    100%,0%{
+        color: rgb(255,0,0);
+    }
+    8%{
+        color: rgb(255,127,0);
+    }
+    16%{
+        color: rgb(255,255,0);
+    }
+    25%{
+        color: rgb(127,255,0);
+    }
+    33%{
+        color: rgb(0,255,0);
+    }
+    41%{
+        color: rgb(0,255,127);
+    }
+    50%{
+        color: rgb(0,255,255);
+    }
+    58%{
+        color: rgb(0,127,255);
+    }
+    66%{
+        color: rgb(0,0,255);
+    }
+    75%{
+        color: rgb(127,0,255);
+    }
+    83%{
+        color: rgb(255,0,255);
+    }
+    91%{
+        color: rgb(255,0,127);
+    }
+}
+    
+@-webkit-keyframes rainbowback {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+
+@-moz-keyframes rainbowback {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+
+@-o-keyframes rainbowback {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+
+@keyframes rainbowback { 
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}

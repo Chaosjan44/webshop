@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* CSS für <header> */
+header {
+    margin-bottom: 0 !important;
+}
+
+/* Höhen auf 100vh (Vertical Height) setzen */
+.header-header {
+    min-height: 8vh;
+}
+
+.minheight100 {
+    min-height: 86vh;
+}
+
+.footer-footer {
+    min-height: 6vh;
+}
+
+
+
+/* Light/Dark mode Switch */
+.styleswitcher {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+.styleswitcherlabel {
+    display: block;
+    width: 70px;
+    height: 30px;
+    background-color: #dee2e6;
+    border-radius: 15px;
+    position: relative;
+    cursor: pointer;
+    transition: 0.5s;
+    box-shadow: 0 0 2px #212529;
+}
+
+.styleswitcherlabel::after {
+    content: "";
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    border-radius: 5px;
+    top: 3px;
+    left: 5px;
+    transition: 0.5s;
+    /* background-color: #000000; */
+    background-image: url("/images/light.png");
+    background-size: 24px;
+}
+
+.styleswitcher:checked + .styleswitcherlabel:after {
+    left: calc(100% - 5px);
+    transform: translateX(-100%);
+    /* background-color: #ffffff; */
+    background-image: url("/images/dark.png");
+    background-size: 24px;
+}
+
+.styleswitcher:checked + .styleswitcherlabel {
+    background-color: #212529;
+    box-shadow: 0 0 2px #dee2e6;
+}
+
+
+
+/* Header Navbar usw. */
+.nav-link {
+    font-size: 1.3rem;
+}
+
+.fa-user:hover, .fa-cart-shopping:hover, .fa-circle-info:hover {
+    color: #0d6efd;
+}
+
+.fa-exclamation{
+    font-size: 1.5rem;
+    color: red;
+}
+
+
+
+/* Custom colors */
+.bg-custom-dark {
+    background-color: #2d3238 !important;
+}
+
+.custom-dark2 {
+    background-color: #3e444d !important;
+}
+
+
+
+/* sets all card from products.php to the same height (per row) */
+.prodcard{
+    height: 100% !important; 
+}
+
+
+
+/* css stuff for Cookies */
+.modal-header {
+    /* border-bottom: 1px solid #32373d !important; */
+    border-bottom: 0px !important;
+}
+
+.modal-footer {
+    /* border-top: 1px solid #32373d !important; */
+    border-top: 0px !important;
+}
+
+.cookie-p-text {
+    margin-bottom: 0 !important;
+}
+
+
+
+/* footer setze z-index auf 900 */
+.footer {
+    z-index: 900 !important;
+}
+
+/* INDEX.PHP */
+/* INDEX.PHP Horizontale Linie */
+.hr-light {
+    border-top: 3px solid #fff;
+    width: 80px;
+}
+
+.bg { 
+    background-image: url("/media/bg-img.jpg");
+    height: 70%; 
+    background-position:right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.minimum-vh {
+    min-height: 55vh !important;
+}
+
+.card-img-top {
+    width: 100% !important;
+    height: 9vw !important;
+    object-fit: cover !important;
+}
+
+.index-rtx-text {
+    font-family: 'Saira Condensed';
+    font-weight: bold !important;
+    font-size: 3.7rem !important ;
+}
+
+
+
+/* IMPRESSUM.PHP */
+.impressum-breite{
+    width: 75%;
+}
+
+/* BOOTSTRAP CUSTOM STUFF */
+.card-img-top {
+    width: 100% !important;
+    height: auto !important;
+    object-fit: cover !important;
+}
+
+/* HEADER */
+.header-header {
+    border-bottom: 3px solid #0d6efd;
+    display: block;
+}
+
+.max-h-150 {
+    max-height: 150px;
+    overflow: auto;
+}
+
+
+/* Custom Stuff */
+/* BreakLine at 400px (used for user.php for breaking the E-Mail at a certain lenght) */
+.bl-400 {
+    max-width:400px;
+    word-wrap:break-word;
+}
